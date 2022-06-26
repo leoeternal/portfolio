@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import "./servicePage.css";
 import Lottie from "react-lottie";
 import Aos from "aos";
@@ -7,12 +7,6 @@ import { Elastic, gsap } from "gsap";
 import { ScrollTrigger, TextPlugin } from "gsap/all";
 
 function ServicePage() {
-  let boxRef1 = useRef(null);
-  let boxRef2 = useRef(null);
-  let boxRef3 = useRef(null);
-  let boxRef4 = useRef(null);
-  let textRef = useRef(null);
-
   useEffect(() => {
     Aos.init();
   }, []);
@@ -20,18 +14,13 @@ function ServicePage() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.registerPlugin(TextPlugin);
-    const el = boxRef1.current;
-    const el2 = boxRef2.current;
-    const el3 = boxRef3.current;
-    const el4 = boxRef4.current;
-    const textEl = textRef.current;
     gsap.fromTo(
-      el,
+      "#box1",
       { xPercent: -50 },
       {
         xPercent: 0,
         scrollTrigger: {
-          trigger: el,
+          trigger: "#box1",
           toggleActions: "restart none none none",
         },
         ease: Elastic.easeOut,
@@ -39,13 +28,13 @@ function ServicePage() {
       }
     );
     gsap.fromTo(
-      el2,
+      "#box2",
       { xPercent: 50, display: "none" },
       {
         xPercent: 0,
         display: "flex",
         scrollTrigger: {
-          trigger: el2,
+          trigger: "#box2",
           toggleActions: "restart none none none",
         },
         ease: Elastic.easeOut,
@@ -53,12 +42,12 @@ function ServicePage() {
       }
     );
     gsap.fromTo(
-      el3,
+      "#box3",
       { xPercent: -50 },
       {
         xPercent: 0,
         scrollTrigger: {
-          trigger: el3,
+          trigger: "#box3",
           toggleActions: "restart none none none",
         },
         ease: Elastic.easeOut,
@@ -66,13 +55,13 @@ function ServicePage() {
       }
     );
     gsap.fromTo(
-      el4,
+      "#box4",
       { xPercent: 50, display: "none" },
       {
         xPercent: 0,
         display: "flex",
         scrollTrigger: {
-          trigger: el4,
+          trigger: "#box4",
           toggleActions: "restart none none none",
         },
         ease: Elastic.easeOut,
@@ -80,9 +69,9 @@ function ServicePage() {
       }
     );
 
-    gsap.to(textEl, {
+    gsap.to("#textAnimation", {
       scrollTrigger: {
-        trigger: textEl,
+        trigger: "#textAnimation",
       },
       duration: 2,
       text: "I provide everything you need for your perfect website",
@@ -125,8 +114,8 @@ function ServicePage() {
 
   return (
     <div id="service" className="servicepage-wrapper">
-      <h1 ref={textRef}> </h1>
-      <div ref={boxRef1} className="boxleft">
+      <h1 id="textAnimation"> </h1>
+      <div id="box1" className="boxleft">
         <div className="svg">
           <Lottie options={defaultOptions} />
         </div>
@@ -140,7 +129,7 @@ function ServicePage() {
           </p>
         </div>
       </div>
-      <div ref={boxRef2} className="boxright">
+      <div id="box2" className="boxright">
         <div className="svg">
           <Lottie options={defaultOptionsTwo} />
         </div>
@@ -154,7 +143,7 @@ function ServicePage() {
           </p>
         </div>
       </div>
-      <div ref={boxRef3} className="boxleft">
+      <div id="box3" className="boxleft">
         <div className="svg">
           <Lottie options={defaultOptionsThree} />
         </div>
@@ -168,7 +157,7 @@ function ServicePage() {
           </p>
         </div>
       </div>
-      <div ref={boxRef4} className="boxright">
+      <div id="box4" className="boxright">
         <div className="svg">
           <Lottie options={defaultOptionsFour} />
         </div>
