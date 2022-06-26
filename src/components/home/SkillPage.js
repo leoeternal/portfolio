@@ -15,7 +15,7 @@ function SkillPage() {
         scrollTrigger: {
           trigger: "#leftbox",
         },
-
+        lazy: false,
         opacity: 1,
         scale: 1,
         duration: 1.5,
@@ -31,7 +31,7 @@ function SkillPage() {
         scrollTrigger: {
           trigger: "#rightbox",
         },
-
+        lazy: false,
         opacity: 1,
         scale: 1,
         duration: 1.5,
