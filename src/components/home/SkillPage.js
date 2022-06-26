@@ -1,23 +1,19 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import "./skillPage.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 function SkillPage() {
-  const leftBoxRef = useRef(null);
-  const rightBoxRef = useRef(null);
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    const leftBoxRefEl = leftBoxRef.current;
-    const rightBoxRefEl = rightBoxRef.current;
     gsap.fromTo(
-      leftBoxRefEl,
+      "#leftbox",
       {
         opacity: 0,
         scale: 0.5,
       },
       {
         scrollTrigger: {
-          trigger: leftBoxRefEl,
+          trigger: "#leftbox",
         },
 
         opacity: 1,
@@ -26,14 +22,14 @@ function SkillPage() {
       }
     );
     gsap.fromTo(
-      rightBoxRefEl,
+      "#rightbox",
       {
         opacity: 0,
         scale: 0.5,
       },
       {
         scrollTrigger: {
-          trigger: rightBoxRefEl,
+          trigger: "#rightbox",
         },
 
         opacity: 1,
@@ -46,7 +42,7 @@ function SkillPage() {
     <div id="skill" className="skillpage-wrapper">
       <h1>SKILLS</h1>
       <div className="skills">
-        <div ref={leftBoxRef} className="left">
+        <div id="leftbox" className="left">
           <p>React</p>
           <p>React Native</p>
           <p>Node.js</p>
@@ -57,7 +53,7 @@ function SkillPage() {
           <p>Data Structures</p>
           <p>Algorithms</p>
         </div>
-        <div ref={rightBoxRef} className="right">
+        <div id="rightbox" className="right">
           <p>HTML, CSS</p>
           <p>Java Script</p>
           <p>Material UI CSS</p>
