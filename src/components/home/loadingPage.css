@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+
+.loadingpage-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingpage-wrapper .container {
+  /* border: 1px solid; */
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loadingpage-wrapper .text {
+  /* border: 1px solid; */
+  width: 50%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingpage-wrapper .text p {
+  font-family: "Bungee Shade", cursive;
+  font-size: 40px;
+  text-align: center;
+}
+
+@media (max-width: 1257px) {
+  .loadingpage-wrapper .text p {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .loadingpage-wrapper .container {
+    width: 70%;
+  }
+  .loadingpage-wrapper .text {
+    width: 70%;
+  }
+}
+
+@media (max-width: 786px) {
+  .loadingpage-wrapper .container {
+    width: 80%;
+  }
+  .loadingpage-wrapper .text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 689px) {
+  .loadingpage-wrapper .container {
+    width: 90%;
+  }
+  .loadingpage-wrapper .text {
+    width: 90%;
+  }
+}
+
+@media (max-width: 614px) {
+  .loadingpage-wrapper .container {
+    width: 99%;
+  }
+  .loadingpage-wrapper .text {
+    width: 99%;
+  }
+}
+
+@media (max-width: 430px) {
+  .loadingpage-wrapper .container {
+    width: 99%;
+    height: 35%;
+  }
+
+  .loadingpage-wrapper .text p {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 365px) {
+  .loadingpage-wrapper .container {
+    width: 99%;
+    height: 25%;
+  }
+
+  .loadingpage-wrapper .text p {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap");
+
+.skillpage-wrapper {
+  /* border: 1px solid; */
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.skillpage-wrapper h1 {
+  font-size: 200px;
+  position: absolute;
+  left: 40%;
+  top: 55%;
+  color: rgb(230, 230, 230);
+  font-family: "Inter", sans-serif;
+}
+
+.skillpage-wrapper .skills {
+  /* border: 1px solid; */
+  width: 70%;
+  height: 70%;
+  position: relative;
+  top: 15%;
+  left: 15%;
+  display: flex;
+}
+
+.skills .left {
+  /* border: 1px solid; */
+  width: 49%;
+  height: 99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .left p,
+.skills .right p {
+  font-size: 40px;
+  margin: 5px;
+  font-family: "Raleway", sans-serif;
+}
+
+.skills .right {
+  /* border: 1px solid; */
+  width: 49%;
+  height: 99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1164px) {
+  .skillpage-wrapper h1 {
+    left: 35%;
+  }
+  .skillpage-wrapper .skills {
+    width: 80%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 1064px) {
+  .skillpage-wrapper h1 {
+    left: 25%;
+  }
+  .skillpage-wrapper .skills {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 921px) {
+  .skillpage-wrapper h1 {
+    left: 15%;
+  }
+  .skillpage-wrapper .skills {
+    width: 99%;
+    left: 2px;
+  }
+}
+
+@media (max-width: 818px) {
+  .skillpage-wrapper h1 {
+    font-size: 170px;
+    left: 20%;
+    top: 60%;
+  }
+  .skills .left p,
+  .skills .right p {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 737px) {
+  .skillpage-wrapper h1 {
+    font-size: 150px;
+    left: 20%;
+  }
+}
+
+@media (max-width: 653px) {
+  .skillpage-wrapper h1 {
+    font-size: 150px;
+    left: 10%;
+  }
+}
+@media (max-width: 584px) {
+  .skillpage-wrapper h1 {
+    font-size: 130px;
+    left: 10%;
+  }
+  .skills .left p,
+  .skills .right p {
+    font-size: 25px;
+    margin: 5px 0px;
+  }
+}
+
+@media (max-width: 505px) {
+  .skillpage-wrapper {
+    height: 60vh;
+  }
+  .skillpage-wrapper h1 {
+    font-size: 100px;
+    left: 15%;
+  }
+  .skills .left p,
+  .skills .right p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 413px) {
+  .skillpage-wrapper h1 {
+    font-size: 80px;
+    left: 15%;
+  }
+  .skills .left p,
+  .skills .right p {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 330px) {
+  .skillpage-wrapper h1 {
+    font-size: 60px;
+    left: 15%;
+  }
+  .skills .left p,
+  .skills .right p {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+/* ------------------------------------------ HEIGHT --------------------------------------------------------------- */

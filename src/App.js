@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import Header from "./components/Header";
+import Home from "./components/home/Home";
+import LoadingPage from "./components/home/LoadingPage";
+import MenuPage from "./components/home/MenuPage";
 
 function App() {
+  const [menu, setMenu] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(true);
+    }, [12000]);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {!loading ? (
+        <LoadingPage />
+      ) : (
+        <>
+          {menu ? (
+            <>
+              <MenuPage setMenu={setMenu} />
+            </>
+          ) : (
+            <>
+              <Header setMenu={setMenu} />
+              <Home />
+            </>
+          )}
+        </>
+      )}
+    </>
   );
 }
 

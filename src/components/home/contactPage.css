@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap");
+
+.contactpage-wrapper {
+  /* border: 1px solid white; */
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  padding: 130px 0px 0px 50px;
+}
+
+.contactpage-wrapper h1 {
+  /* border: 1px solid white; */
+  color: white;
+  font-size: 150px;
+  font-family: "Helvetica Now Display DW", sans-serif;
+  letter-spacing: 5px;
+}
+
+.contactpage-wrapper #headingone {
+  /* border: 1px solid white; */
+  color: white;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.contactpage-wrapper #mail {
+  /* border: 1px solid white; */
+  font-size: 20px;
+  color: white;
+  margin-top: 50px;
+  margin-left: 8px;
+  display: inline-block;
+  font-family: "Merienda One", cursive;
+}
+
+.contactpage-wrapper #mail:hover {
+  color: rgb(177, 177, 177);
+  cursor: pointer;
+}
+
+.contactpage-wrapper #linkedin {
+  /* border: 1px solid white; */
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+  display: inline-block;
+  margin-left: 8px;
+  font-family: "Merienda One", cursive;
+}
+
+.contactpage-wrapper #linkedin:hover {
+  color: rgb(177, 177, 177);
+  cursor: pointer;
+}
+
+@media (max-width: 1033px) {
+  .contactpage-wrapper h1 {
+    font-size: 140px;
+  }
+}
+
+@media (max-width: 960px) {
+  .contactpage-wrapper h1 {
+    font-size: 14vw;
+  }
+}
+
+@media (max-width: 737px) {
+  .contactpage-wrapper h1 {
+    font-size: 13vw;
+  }
+  .contactpage-wrapper {
+    height: 70vh;
+    padding: 90px 10px 0px 10px;
+  }
+}
+
+@media (max-width: 599px) {
+  .contactpage-wrapper {
+    height: 50vh;
+    padding: 70px 10px 0px 10px;
+  }
+  .contactpage-wrapper #headingone {
+    font-size: 23px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 466px) {
+  .contactpage-wrapper #headingone {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 391px) {
+  .contactpage-wrapper h1 {
+    font-size: 12vw;
+  }
+  .contactpage-wrapper #headingone {
+    font-size: 16px;
+    padding-top: 10px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 315px) {
+  .contactpage-wrapper h1 {
+    font-size: 11vw;
+  }
+  .contactpage-wrapper #headingone {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .contactpage-wrapper #mail {
+    font-size: 16px;
+  }
+  .contactpage-wrapper #linkedin {
+    font-size: 16px;
+  }
+}
+
+/* ------------------------------------------ HEIGHT --------------------------------------------------------------- */

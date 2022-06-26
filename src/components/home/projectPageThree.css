@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento&display=swap");
+
+.projectpagethree-wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(48, 50, 58);
+}
+
+.projectpagethree-wrapper h1 {
+  /* border: 1px solid white; */
+  text-align: center;
+  margin: 20px;
+  font-size: 55px;
+  font-weight: 600;
+  letter-spacing: 15px;
+  font-weight: 300;
+  word-spacing: -5px;
+  color: white;
+  font-family: "Helvetica Now Display DW", sans-serif;
+}
+
+.projectpagethree-wrapper .picture-text {
+  /* border: 1px solid white; */
+  height: 85%;
+  display: flex;
+}
+
+.projectpagethree-wrapper .picture-text img {
+  /* border: 1px solid white; */
+  width: 70%;
+  height: 90%;
+  border-radius: 5px;
+  margin: 30px 0px 0px 40px;
+  /* box-shadow: 10px 10px 10px rgb(60, 60, 60); */
+  box-shadow: 1px 1px 10px rgb(14, 14, 14);
+}
+
+.projectpagethree-wrapper .picture-text h2 {
+  /* border: 1px solid white; */
+  color: rgb(137, 137, 137);
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Pacifico", cursive;
+  margin: 80px 0px 0px 45px;
+}
+
+.projectpagethree-wrapper .picture-text p {
+  /* border: 1px solid white; */
+  color: rgb(226, 226, 226);
+  line-height: 32px;
+  font-size: 23px;
+  letter-spacing: 1px;
+  margin: 20px 35px 0px 45px;
+  font-family: "Quattrocento", serif;
+}
+
+@media (max-width: 1357px) and (min-width: 896px) {
+  .projectpagethree-wrapper h1 {
+    letter-spacing: 10px;
+  }
+}
+
+@media (max-width: 1218px) and (min-width: 896px) {
+  .projectpagethree-wrapper h1 {
+    font-size: 50px;
+  }
+
+  .projectpagethree-wrapper .picture-text h2 {
+    margin: 40px 0px 0px 45px;
+  }
+
+  .projectpagethree-wrapper .picture-text p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1136px) and (min-width: 896px) {
+  .projectpagethree-wrapper h1 {
+    letter-spacing: 5px;
+  }
+  .projectpagethree-wrapper .picture-text p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1048px) and (min-width: 896px) {
+  .projectpagethree-wrapper h1 {
+    letter-spacing: 0px;
+  }
+  .projectpagethree-wrapper .picture-text h2 {
+    margin: 55px 0px 0px 45px;
+  }
+  .projectpagethree-wrapper .picture-text p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 895px) {
+  .projectpagethree-wrapper h1 {
+    font-size: 40px;
+    letter-spacing: 5px;
+    padding: 10px 0px;
+  }
+  .projectpagethree-wrapper .picture-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .projectpagethree-wrapper .picture-text img {
+    width: 99%;
+    height: 65%;
+    margin: auto;
+  }
+  .projectpagethree-wrapper .picture-text h2 {
+    margin: 0px;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .projectpagethree-wrapper .picture-text p {
+    margin: 0px;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 850px) {
+  .projectpagethree-wrapper h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 750px) {
+  .projectpagethree-wrapper h1 {
+    font-size: 30px;
+  }
+  .projectpagethree-wrapper .picture-text p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 666px) {
+  .projectpagethree-wrapper h1 {
+    font-size: 25px;
+  }
+  .projectpagethree-wrapper .picture-text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 584px) {
+  .projectpagethree-wrapper .picture-text img {
+    height: 55%;
+  }
+  .projectpagethree-wrapper h1 {
+    font-size: 30px;
+  }
+  .projectpagethree-wrapper .picture-text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 387px) {
+  .projectpagethree-wrapper h1 {
+    font-size: 25px;
+  }
+  .projectpagethree-wrapper .picture-text p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 334px) {
+  .projectpagethree-wrapper h1 {
+    font-size: 20px;
+  }
+  .projectpagethree-wrapper .picture-text p {
+    line-height: 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 293px) {
+  .projectpagethree-wrapper h1 {
+    font-size: 15px;
+  }
+  .projectpagethree-wrapper .picture-text p {
+    font-size: 13px;
+  }
+}
+
+/* ------------------------------------------ HEIGHT --------------------------------------------------------------- */
+
+@media (max-width: 768px) and (max-height: 637px) {
+  .projectpagethree-wrapper .picture-text p {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 425px) and (max-height: 637px) {
+  .projectpagethree-wrapper h1 {
+    margin: 0;
+  }
+  .projectpagethree-wrapper .picture-text p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}

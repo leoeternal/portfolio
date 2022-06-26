@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.projectpage-wrapper {
+  /* border: 1px solid; */
+  width: 100%;
+  height: 100%;
+  font-family: "Helvetica Now Display DW", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.projectpage-wrapper h1 {
+  /* border: 1px solid; */
+  font-size: 140px;
+  padding: 40px;
+  text-align: center;
+  padding: 120px 0px 10px 0px;
+}
+
+.projectpage-wrapper #desctext {
+  /* border: 1px solid; */
+  padding: 100px 100px 50px 100px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: rgb(32, 29, 29);
+  font-weight: 300;
+}
+
+.projectpage-wrapper #scrolltext {
+  /* border: 1px solid; */
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-family: "Pacifico", cursive;
+}
+
+@media (max-width: 999px) {
+  .projectpage-wrapper #desctext {
+    padding: 50px 100px 50px 100px;
+  }
+}
+
+@media (max-width: 877px) {
+  .projectpage-wrapper h1 {
+    padding: 40px;
+  }
+  .projectpage-wrapper #desctext {
+    padding: 50px;
+  }
+  .projectpage-wrapper #scrolltext {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 713px) {
+  .projectpage-wrapper h1 {
+    padding: 30px;
+  }
+  .projectpage-wrapper #desctext {
+    padding: 35px;
+  }
+}
+
+@media (max-width: 676px) {
+  .projectpage-wrapper h1 {
+    padding: 20px;
+  }
+  .projectpage-wrapper #desctext {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 607px) {
+  .projectpage-wrapper h1 {
+    font-size: 120px;
+  }
+  .projectpage-wrapper #desctext {
+    font-size: 25px;
+  }
+  .projectpage-wrapper #scrolltext {
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 518px) {
+  .projectpage-wrapper #desctext {
+    padding-top: 0px;
+  }
+  .projectpage-wrapper #scrolltext {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 499px) {
+  .projectpage-wrapper h1 {
+    font-size: 100px;
+    padding-top: 30px;
+  }
+  .projectpage-wrapper #desctext {
+    font-size: 20px;
+    padding-top: 30px;
+  }
+  .projectpage-wrapper #scrolltext {
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 435px) {
+  .projectpage-wrapper h1 {
+    font-size: 80px;
+    padding-top: 40px;
+  }
+  .projectpage-wrapper #desctext {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .projectpage-wrapper #scrolltext {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 395px) {
+  .projectpage-wrapper h1 {
+    margin-top: 30px;
+  }
+  .projectpage-wrapper #desctext {
+    font-size: 18px;
+  }
+  .projectpage-wrapper #scrolltext {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .projectpage-wrapper h1 {
+    font-size: 60px;
+    margin-top: 40px;
+  }
+  .projectpage-wrapper #desctext {
+    line-height: 40px;
+  }
+  .projectpage-wrapper #scrolltext {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 302px) {
+  .projectpage-wrapper h1 {
+    margin-top: 50px;
+  }
+  .projectpage-wrapper #desctext {
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 267px) {
+  .projectpage-wrapper h1 {
+    font-size: 50px;
+  }
+  .projectpage-wrapper #desctext {
+    font-size: 16px;
+  }
+}
+
+/* ------------------------------------------ HEIGHT --------------------------------------------------------------- */
+
+@media (max-width: 1024px) and (max-height: 637px) {
+  .projectpage-wrapper h1 {
+    font-size: 140px;
+    padding: 50px 0px 10px 0px;
+  }
+  .projectpage-wrapper #desctext {
+    padding: 50px 100px 50px 100px;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 600px) {
+  .projectpage-wrapper h1 {
+    font-size: 150px;
+    padding: 70px 0px 10px 0px;
+  }
+  .projectpage-wrapper #desctext {
+    padding: 20px 10px 20px 10px;
+    font-size: 25px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 768px) and (max-height: 637px) {
+  .projectpage-wrapper h1 {
+    font-size: 140px;
+    padding: 50px 0px 10px 0px;
+  }
+  .projectpage-wrapper #desctext {
+    padding: 10px 50px 20px 50px;
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 540px) and (max-height: 720px) {
+  .projectpage-wrapper h1 {
+    font-size: 105px;
+    padding: 70px 0px 10px 0px;
+  }
+  .projectpage-wrapper #desctext {
+    padding: 20px 10px 20px 10px;
+    font-size: 23px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 425px) and (max-height: 637px) {
+  .projectpage-wrapper h1 {
+    font-size: 100px;
+    padding: 50px 0px 10px 0px;
+  }
+  .projectpage-wrapper #desctext {
+    padding: 50px 10px 20px 10px;
+    font-size: 25px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 375px) and (max-height: 667px) {
+  .projectpage-wrapper h1 {
+    font-size: 90px;
+    padding: 50px 0px 10px 0px;
+  }
+  .projectpage-wrapper #desctext {
+    padding: 20px 10px 20px 10px;
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 320px) and (max-height: 637px) {
+  .projectpage-wrapper h1 {
+    font-size: 75px;
+    padding: 50px 0px 10px 0px;
+  }
+  .projectpage-wrapper #desctext {
+    padding: 20px 10px 20px 10px;
+    font-size: 19px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 280px) and (max-height: 653px) {
+  .projectpage-wrapper h1 {
+    font-size: 60px;
+    padding: 70px 0px 10px 0px;
+  }
+  .projectpage-wrapper #desctext {
+    padding: 20px 10px 20px 10px;
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
